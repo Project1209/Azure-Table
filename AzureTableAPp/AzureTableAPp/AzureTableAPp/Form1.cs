@@ -10,15 +10,15 @@ using System.Windows.Forms;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 using Microsoft.WindowsAzure.Storage.Auth;
-
+using System.Configuration;
 
 namespace AzureTableAPp
 {
-    
+
     public partial class Form1 : Form
     {
-        private static String storageName = "azurel2storagepractice";
-        private static String accountAccountKey = "diRwbOEi/94gWDmXZc9tMHYTx2Q0+6p82/rjkBz87JAY22HbcqOgA3bTJYI8VnqUBnhi1mfvqaxqXTcvbSBSDQ==";
+        private static String storageName = ConfigurationManager.AppSettings["storageName"];
+        private static String accountAccountKey = ConfigurationManager.AppSettings["accountAccountKey"];
         private static StorageCredentials storageCredentials = new StorageCredentials(storageName, accountAccountKey);
         private static CloudStorageAccount cloudStorageAccount = new CloudStorageAccount(storageCredentials,true);
         private static CloudTableClient cloudTableClient = cloudStorageAccount.CreateCloudTableClient();

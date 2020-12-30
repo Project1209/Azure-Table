@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSetting>
+    <add key="storageName" value="azurel2storagepractice"/>
+    <add key="accountAccountKey" value="diRwbOEi/94gWDmXZc9tMHYTx2Q0+6p82/rjkBz87JAY22HbcqOgA3bTJYI8VnqUBnhi1mfvqaxqXTcvbSBSDQ=="/>
+  </appSetting>
+</configuration>
