@@ -1,1 +1,1 @@
-Azure table hands-on 
+Azure table hands-on
